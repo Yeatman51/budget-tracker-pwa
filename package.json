@@ -1,0 +1,19 @@
+{
+  "name": "budget-tracker-pwa",
+  "version": "1.0.0",
+  "description": "## Links: Github: https://github.com/Yeatman51",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yeatman51/budget-tracker-pwa.git"
+  },
+  "author": "Jon Yeatman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yeatman51/budget-tracker-pwa/issues"
+  },
+  "homepage": "https://github.com/Yeatman51/budget-tracker-pwa#readme"
+}
