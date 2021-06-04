@@ -17,4 +17,4 @@ This budget tracker utilizes mongo DB to store user Inputted data. This user dat
 This application also utilizes the PWA structure so The user is able to continue to add new data points when you were off-line.
 
 
-![Budget Tracker Graph](img/budget-tracker.png)
+![Budget Tracker Graph](./public/img/budget-tracker.png)
