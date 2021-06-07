@@ -6,18 +6,19 @@ const FILES_TO_CACHE = [
     "./index.js",
     "./manifest.webmanifest",
     "./icons/icon-192x192.png",
-    "./icons/icon-512x512.png"
+    "./icons/icon-512x512.png",
+
   ];
   
   // Static cache is responsible for front-end files/images; data cache is responsible for user inputs
-  const CACHE_NAME = "static-cache-v2";
+  const CACHE_NAME = "static-cache-v1";
   const DATA_CACHE_NAME = "data-cache-v1";
   
   // Install
   self.addEventListener("install", function(evt) {
     evt.waitUntil(
       caches.open(CACHE_NAME).then(cache => {
-        console.log("Your files were pre-cached successfully!");
+        console.log("pre-cached successful!");
         return cache.addAll(FILES_TO_CACHE);
       })
     );
@@ -25,6 +26,7 @@ const FILES_TO_CACHE = [
     self.skipWaiting();
   });
   
+  // Remove old cash
   self.addEventListener("activate", function(evt) {
     evt.waitUntil(
       caches.keys().then(keyList => {
